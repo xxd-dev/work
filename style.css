@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    min-height: 100%;
+    background-color: #FFF1E8;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: min(100%, 25em);
+    margin: 1em;
+}
+
+pre {
+    color: #000000;
+    font-size: 2em;
+    white-space: pre-wrap;
+}
+
+
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 100%;
+}

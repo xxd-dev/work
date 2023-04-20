@@ -56,8 +56,10 @@ function main() {
 
     for (const key of Object.keys(tasks)) { 
         if (key != end) {
-            document.getElementById("main").innerHTML += `<pre>${key.padEnd(15, " ")} ${formatTimeFromMinutes(tasks[key])}</pre>`;
+            document.getElementById("main").innerHTML += `<pre>${key.padEnd(25, " ")} ${formatTimeFromMinutes(tasks[key])}</pre>`;
             console.log(key + ": ", formatTimeFromMinutes(tasks[key])); 
         }        
     };
 }
+
+

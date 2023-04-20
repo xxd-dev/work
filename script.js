@@ -54,9 +54,13 @@ function main() {
         tasks[description] += getTimeDifferenceInMinutes(time, time2, rounding);
     }
 
+    len = 0;
+    for (const key of Object.keys(tasks)) {
+        len = Math.max(len, key.length)
+    }
     for (const key of Object.keys(tasks)) { 
         if (key != end) {
-            document.getElementById("main").innerHTML += `<pre>${key.padEnd(25, " ")} ${formatTimeFromMinutes(tasks[key])}</pre>`;
+            document.getElementById("main").innerHTML += `<pre>${key.padEnd(len+3, " ")}${formatTimeFromMinutes(tasks[key])}</pre>`;
             console.log(key + ": ", formatTimeFromMinutes(tasks[key])); 
         }        
     };
